@@ -2,8 +2,6 @@ import pandas as pd
 import streamlit as st
 import pickle
 
-from altair.vegalite.v3.theme import theme
-
 User_list = pickle.load(open('User.pkl','rb'))
 users_list = User_list['id'].unique()
 
