@@ -1,3 +1,3 @@
 streamlit
-turicreate==4.0
+turicreate==4.2
 tensorflow== 1.13.1
