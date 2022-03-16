@@ -6,6 +6,8 @@ users_list = User_list['user_id'].unique()
 user=User_list[["user_id","Age","gender","product_name"]].value_counts().reset_index()
 user.columns=['id',"age","Gen",'product','count']
 
+!pip install sklearn
+import sklearn
 from sklearn.model_selection import train_test_split
 trainset, testset = train_test_split(user, test_size=0.25)
 
